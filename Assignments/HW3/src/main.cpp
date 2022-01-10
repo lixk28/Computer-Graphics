@@ -19,8 +19,8 @@
 const unsigned int SCREEN_WIDTH = 1024;
 const unsigned int SCREEN_HEIGHT = 768;
 
-const int X_SEGMENTS = 32;
-const int Y_SEGMENTS = 32;
+const int X_SEGMENTS = 512;
+const int Y_SEGMENTS = 512;
 
 void processInput(GLFWwindow *window)
 {
@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
         gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
         GLfloat light_pos[] = {-10.0f, 10.0f, 10.0f, 0.0f};
-        GLfloat light_ambient[] = {1.0f, 1.0f, 1.0f, 1.0f};
+        GLfloat light_ambient[] = {0.1f, 0.1f, 0.1f, 0.1f};
         GLfloat light_diffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};
         GLfloat light_specular[] = {1.0f, 1.0f, 1.0f, 1.0f};
 
@@ -204,7 +204,7 @@ int main(int argc, char *argv[])
         GLfloat material_ambient[] = {0.118f, 0.565f, 1.0f, 1.0f};
         GLfloat material_diffuse[] = {0.118f, 0.565f, 1.0f, 1.0f};
         GLfloat material_specular[] = {0.118f, 0.565f, 1.0f, 1.0f};
-        GLfloat material_shininess[] = {16};
+        GLfloat material_shininess[] = {32};
 
         glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, material_ambient);
         glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, material_diffuse);

@@ -2,9 +2,6 @@
 
 Sphere::Sphere(int X_SEGMENTS, int Y_SEGMENTS)
 {
-  // std::vector<glm::vec3> positions;
-  // std::vector<glm::vec3> normals;
-
   for (int y = 0; y <= Y_SEGMENTS; ++y)
   {
     for (int x = 0; x <= X_SEGMENTS; ++x)
